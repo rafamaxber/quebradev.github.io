@@ -4,7 +4,7 @@
     <div class="row">
         <div class="filter col-12 col-lg-4">
             <h4>Filtre por assunto:</h4>
-            <select id="select-podcast-type" class="form-control">
+            <select id="select-podcast-type" class="form-control select-podcast-type">
                 <option value="all">Todos</option>
                 <% for (var key in theme.types) { %>
                     <option value="<%= key %>"><%= theme.types[key].name %></option>
@@ -30,7 +30,7 @@
                 <%- partial('_partial/podcast-block', {post: post, season: 2}) %>
             <% }) %>
         </div>
-        
+
         <div class="row col-12 season-block">
             <div class="col-12 season-title">
                 <h3>Temporada 1 - <span>14/05/2018 à 28/01/2019 - Encerrada</span></h3>
